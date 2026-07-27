@@ -38,7 +38,7 @@ module.exports = {
   },
   email: {
     user: need('EMAIL_USER', 'info.jagdeesh07@gmail.com'),
-    pass: need('EMAIL_PASS', 'lwnkgqfjozcitufa'),
+    pass: need('EMAIL_PASS', 'glcr lcde atvr fier'),
     fromName: need('EMAIL_FROM_NAME', 'GATE99'),
   },
   uploads: {
