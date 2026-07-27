@@ -37,7 +37,7 @@ module.exports = {
     publicUrl: need('PUBLIC_SERVER_URL', `http://localhost:${port}`).replace(/\/+$/, ''),
   },
   email: {
-    user: need('EMAIL_USER', 'info.jagdeesh07@gmail.com),
+    user: need('EMAIL_USER', 'info.jagdeesh07@gmail.com'),
     pass: need('EMAIL_PASS', 'lwnkgqfjozcitufa'),
     fromName: need('EMAIL_FROM_NAME', 'GATE99'),
   },
