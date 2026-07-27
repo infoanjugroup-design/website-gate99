@@ -11,7 +11,7 @@ const port = Number(need('PORT', 3000));
 
 // Used to sign short-lived book-reader links (see security.tokenSecret below) —
 // falling back to a random per-process secret if not set in .env.
-const tokenSecretFromEnv = need('TOKEN_SECRET', '');
+const tokenSecretFromEnv = need('TOKEN_SECRET', 'phuKIeDWbeVRHf0KsTnl52H7qUOM7H2f2GrxeFZQk9xbMdGCeBoSCWlaPceg6d2P');
 if (!tokenSecretFromEnv) {
   console.warn(
     '[config] TOKEN_SECRET not set in .env — using a random secret generated for ' +
@@ -24,10 +24,10 @@ if (!tokenSecretFromEnv) {
 
 module.exports = {
   nocodb: {
-    url: need('NOCODB_URL', 'http://localhost:8080').replace(/\/+$/, ''),
-    token: need('NOCODB_API_TOKEN', ''),
+    url: need('NOCODB_URL', 'https://app.nocodb.com').replace(/\/+$/, ''),
+    token: need('NOCODB_API_TOKEN', 'nc_pat_sXAoZc6ps9aCIVBF69yvHML3rbUx5LZ1YpUrw0tN'),
     baseName: need('NOCODB_BASE_NAME', 'GATE99'),
-    baseId: need('NOCODB_BASE_ID', '').trim(),
+    baseId: need('NOCODB_BASE_ID', 'pdqt9l8tm9gvz0j').trim(),
   },
   server: {
     port,
@@ -37,8 +37,8 @@ module.exports = {
     publicUrl: need('PUBLIC_SERVER_URL', `http://localhost:${port}`).replace(/\/+$/, ''),
   },
   email: {
-    user: need('EMAIL_USER', ''),
-    pass: need('EMAIL_PASS', ''),
+    user: need('EMAIL_USER', 'info.jagdeesh07@gmail.com),
+    pass: need('EMAIL_PASS', 'lwnkgqfjozcitufa'),
     fromName: need('EMAIL_FROM_NAME', 'GATE99'),
   },
   uploads: {
