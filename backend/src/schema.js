@@ -1,3 +1,4 @@
+
 /* Same table/column layout as the original Google-Sheets backend
    (Code.gs → TABLES). Every table is auto-created in NocoDB on first
    boot with these exact column names. All columns are created as
@@ -21,7 +22,7 @@ const TABLES = {
   // = exact match required).
   Tests:       ['testId','topicId','question','optionA','optionB','optionC','optionD','correct','type','tolerance','testName','testType','isFile','fileUrl','fileName','fileMime','fileSize','answerKey','contentEnc'],
   Pyqs:        ['pyqId','topicId','year','question','optionA','optionB','optionC','optionD','correct','type','tolerance','pyqName','pyqType','isFile','fileUrl','fileName','fileMime','fileSize','answerKey','contentEnc'],
-  Books:       ['bookId','bookName','courseId','pdfUrl','bookImage'],
+  Books:       ['bookId','bookName','courseId','pdfUrl','bookImage','bookType'],
   StudentBooks:['studentUserId','bookId'],
   Enrollments: ['userId','courseId','purchasedAt'],
   OTPs:        ['email','otp','purpose','expiresAt'],
